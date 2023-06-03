@@ -14,7 +14,7 @@ import (
 	_ "github.com/jackc/pgx/v4/stdlib"
 )
 
-const PORT = "8087"
+const PORT = "80"
 
 var count int64
 

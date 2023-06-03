@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-const PORT = "8086"
+const PORT = "80"
 
 type Config struct {
 }
