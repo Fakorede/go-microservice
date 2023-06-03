@@ -1,6 +1,9 @@
+authentication-service/authApp
 broker-service/NOTE.md
 broker-service/brokerApp
 front-end/frontApp
 front-end/NOTE.md
 project/NOTE.md
+project/db-data
+users.sql
 .DS_Store
