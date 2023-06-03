@@ -14,7 +14,7 @@ import (
 	_ "github.com/jackc/pgx/v4/stdlib"
 )
 
-const PORT = 8087
+const PORT = "8087"
 
 var count int64
 
@@ -71,7 +71,7 @@ func main() {
 
 	app := Config{
 		DB:     conn,
-		Models: data.New(conn)
+		Models: data.New(conn),
 	}
 
 	srv := &http.Server{
