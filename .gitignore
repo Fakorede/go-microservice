@@ -7,3 +7,5 @@ project/NOTE.md
 project/db-data
 users.sql
 .DS_Store
+go.work.sum
+NOTE.md
