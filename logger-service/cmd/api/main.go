@@ -47,6 +47,8 @@ func main() {
 		Models: data.New(client),
 	}
 
+	log.Println("starting server...")
+
 	app.serve()
 
 }
