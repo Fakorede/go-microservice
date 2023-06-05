@@ -6,24 +6,27 @@ import (
 	"net/http"
 )
 
-const PORT = "80"
-
 type Config struct {
+	Mailer Mail
 }
 
-func main() {
-	app := Config{}
+const PORT = "80"
 
-	log.Printf("starting broke service on PORT %s\n", PORT)
+func main() {
+
+	app := Config{
+		Mailer: NewMailer(),
+	}
+
+	log.Println("starting mail service on port:", PORT)
 
 	srv := http.Server{
 		Addr:    fmt.Sprintf(":%s", PORT),
 		Handler: app.routes(),
 	}
 
-	// start server
-	err := srv.ListenAndServe()
-	if err != nil {
+	if err := srv.ListenAndServe(); err != nil {
 		log.Panic(err)
 	}
+
 }
