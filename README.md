@@ -18,3 +18,14 @@ make stop
 # Stop all other services
 make stop
 ```
+
+# misc
+
+```bash
+
+# RabbitMQ Managemet UI
+http://localhost:15672/
+
+# MailHog UI
+http://localhost:8026/
+```

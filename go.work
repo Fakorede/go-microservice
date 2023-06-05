@@ -2,8 +2,9 @@ go 1.19
 
 use (
 	./authentication-service
+	./listener-service
 	./broker-service
-	./front-end
 	./logger-service
 	./mailer-service
+	./front-end
 )

@@ -82,3 +82,19 @@ services:
     ports: 
       - "1026:1025"
       - "8026:8025"
+      
+  rabbitmq:
+    image: 'rabbitmq:3.9-management-alpine'
+    ports:
+      # AMQP protocol port
+      - "5672:5672"
+      # HTTP management UI
+      - "15672:15672"
+    deploy:
+      mode: replicated
+      replicas: 1
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    volumes:
+      - ./db-data/rabbitmq/:/var/lib/rabbitmq/
