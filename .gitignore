@@ -1,6 +1,7 @@
 authentication-service/authApp
 broker-service/NOTE.md
 broker-service/brokerApp
+logger-service/loggerApp
 front-end/frontApp
 front-end/NOTE.md
 project/NOTE.md
