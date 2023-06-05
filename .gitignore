@@ -1,5 +1,6 @@
 authentication-service/authApp
 broker-service/NOTE.md
+listener-service/listenerApp
 broker-service/brokerApp
 logger-service/loggerApp
 mailer-service/mailerApp
